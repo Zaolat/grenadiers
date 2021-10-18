@@ -1,0 +1,628 @@
+<techtreemods>
+	<!-- Enable heavy grenadier -->
+	<tech name='HeavyGrenadierEnable' type='Normal'>
+		<dbid>9000</dbid>
+		<status>UNOBTAINABLE</status>
+		<flag>Shadow</flag>
+		<effects>
+			<effect type='Data' amount='-1.00' subtype='AllowedAge' relativity='Absolute'>
+				<target type='ProtoUnit'>ArtilleryDepot</target>
+			</effect>
+			<effect type='Data' amount='1.00' subtype='Enable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='TechStatus' status='obtainable'>VeteranHeavyGrenadiers</effect>
+			<effect type='TechStatus' status='obtainable'>GuardHeavyGrenadiers</effect>
+			<effect type='TechStatus' status='obtainable'>ImperialHeavyGrenadiers</effect>
+			<effect type='TechStatus' status='obtainable'>IncendiaryGrenades</effect>
+			<effect type='TechStatus' status='obtainable'>BayonetGrenadiersShadow</effect>
+		</effects>
+	</tech>
+	<tech name='BayonetGrenadiersShadow' type='Normal'>
+		<dbid>9006</dbid>
+		<researchpoints>0.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<flag>Shadow</flag>
+		<prereqs>
+			<techstatus status='Active'>Bayonet</techstatus>
+			<techstatus status='Active'>DEHCHandMortar</techstatus>
+		</prereqs>
+		<effects>
+			<effect type='Data' action='BayonetAttack' amount='1.00' subtype='ActionEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.20' subtype='DamageForAllHandLogicActions' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+		</effects>
+	</tech>
+
+	<!-- Heavy grenadier upgrades -->
+	<tech name='VeteranHeavyGrenadiers' type='Normal'>
+		<dbid>9001</dbid>
+		<displaynameid>300005</displaynameid>
+		<cost resourcetype='Wood'>200.0000</cost>
+		<cost resourcetype='Gold'>200.0000</cost>
+		<researchpoints>30.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\veteran_grenadier_artillery\veteran_grenadier_artillery.png</icon>
+		<rollovertextid>300004</rollovertextid>
+		<flag>UpgradeTech</flag>
+		<flag>CountsTowardMilitaryScore</flag>
+		<prereqs>
+			<techstatus status='Active'>Fortressize</techstatus>
+		</prereqs>
+		<effects>
+			<effect type='Data' amount='1.20' subtype='Hitpoints' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.20' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='300006'/>
+			<effect type='Data' amount='0.00' subtype='UpdateVisual' unittype='HeavyGrenadier' relativity='Absolute'>
+				<target type='Player'/>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='GuardHeavyGrenadiers' type='Normal'>
+		<dbid>9002</dbid>
+		<displaynameid>300007</displaynameid>
+		<cost resourcetype='Wood'>600.0000</cost>
+		<cost resourcetype='Gold'>600.0000</cost>
+		<researchpoints>30.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\guard_grenadier_artillery\guard_grenadier_artillery.png</icon>
+		<rollovertextid>300004</rollovertextid>
+		<flag>UpgradeTech</flag>
+		<flag>CountsTowardMilitaryScore</flag>
+		<prereqs>
+			<techstatus status='Active'>Industrialize</techstatus>
+			<techstatus status='Active'>VeteranHeavyGrenadiers</techstatus>
+		</prereqs>
+		<effects>
+			<effect type='Data' amount='1.30' subtype='Hitpoints' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.30' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='300008'/>
+		</effects>
+	</tech>
+	<tech name='ImperialHeavyGrenadiers' type='Normal'>
+		<dbid>9003</dbid>
+		<displaynameid>300009</displaynameid>
+		<cost resourcetype='Wood'>1500.0000</cost>
+		<cost resourcetype='Gold'>1500.0000</cost>
+		<researchpoints>30.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\imperial_grenadier_artillery\imperial_grenadier_artillery.png</icon>
+		<rollovertextid>300010</rollovertextid>
+		<flag>UpgradeTech</flag>
+		<flag>CountsTowardMilitaryScore</flag>
+		<prereqs>
+			<techstatus status='Active'>Imperialize</techstatus>
+			<techstatus status='Active'>GuardHeavyGrenadiers</techstatus>
+		</prereqs>
+		<effects>
+			<effect type='Data' amount='1.50' subtype='Hitpoints' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.50' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='300011'>
+			</effect>
+		</effects>
+	</tech>
+	<!-- for ottomans -->
+	<tech mergeMode='replace' name='RGBaratcuCorps' type='Normal'>
+		<dbid>277</dbid>
+		<displaynameid>23777</displaynameid>
+		<cost resourcetype='Wood'>1000.0000</cost>
+		<cost resourcetype='Gold'>1000.0000</cost>
+		<researchpoints>30.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\guard_grenadier_artillery\guard_grenadier_artillery.png</icon>
+		<rollovertextid>23776</rollovertextid>
+		<flag>UpgradeTech</flag>
+		<flag>CountsTowardMilitaryScore</flag>
+		<prereqs>
+			<techstatus status='Active'>Industrialize</techstatus>
+			<techstatus status='Active'>VeteranHeavyGrenadiers</techstatus>
+		</prereqs>
+		<effects>
+			<effect type='Data' amount='1.10' subtype='Hitpoints' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.10' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='TechStatus' status='active'>GuardHeavyGrenadiers</effect>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='32324'/>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='80903' reqtech='DEREVMagyarGrenadier'/>
+		</effects>
+	</tech>
+	<tech mergeMode='replace' name='ImperialBaratcu' type='Normal'>
+		<dbid>1294</dbid>
+		<displaynameid>30929</displaynameid>
+		<cost resourcetype='Wood'>1500.0000</cost>
+		<cost resourcetype='Gold'>1500.0000</cost>
+		<researchpoints>30.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\imperial_grenadier_artillery\imperial_grenadier_artillery.png</icon>
+		<rollovertextid>30928</rollovertextid>
+		<flag>UpgradeTech</flag>
+		<flag>CountsTowardMilitaryScore</flag>
+		<prereqs>
+			<techstatus status='Active'>Imperialize</techstatus>
+			<techstatus status='Active'>GuardHeavyGrenadiers</techstatus>
+			<techstatus status='Active'>RGBaratcuCorps</techstatus>
+		</prereqs>
+		<effects>
+			<effect type='Data' amount='1.50' subtype='Hitpoints' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.50' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='30931'/>
+		</effects>
+	</tech>
+	<!-- for russians -->
+	<tech name='RGRyndaGrenadiers' type='Normal'>
+		<dbid>9004</dbid>
+		<displaynameid>300012</displaynameid>
+		<cost resourcetype='Wood'>1000.0000</cost>
+		<cost resourcetype='Gold'>1000.0000</cost>
+		<researchpoints>30.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\guard_grenadier_artillery\guard_grenadier_artillery.png</icon>
+		<rollovertextid>300013</rollovertextid>
+		<flag>CountsTowardMilitaryScore</flag>
+		<flag>UpgradeTech</flag>
+		<prereqs>
+			<techstatus status='Active'>Industrialize</techstatus>
+			<techstatus status='Active'>VeteranHeavyGrenadiers</techstatus>
+		</prereqs>
+		<effects>
+			<effect type='Data' amount='1.10' subtype='Hitpoints' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.10' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='TechStatus' status='active'>GuardHeavyGrenadiers</effect>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='300014'/>
+		</effects>
+	</tech>
+	<tech name='ImperialRyndas' type='Normal'>
+		<dbid>9005</dbid>
+		<displaynameid>300015</displaynameid>
+		<cost resourcetype='Wood'>1500.0000</cost>
+		<cost resourcetype='Gold'>1500.0000</cost>
+		<researchpoints>30.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\imperial_grenadier_artillery\imperial_grenadier_artillery.png</icon>
+		<rollovertextid>300010</rollovertextid>
+		<flag>UpgradeTech</flag>
+		<flag>CountsTowardMilitaryScore</flag>
+		<prereqs>
+			<techstatus status='Active'>Imperialize</techstatus>
+			<techstatus status='Active'>RGRyndaGrenadiers</techstatus>
+			<techstatus status='Active'>GuardHeavyGrenadiers</techstatus>
+		</prereqs>
+		<effects>
+			<effect type='Data' amount='1.50' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.50' subtype='Hitpoints' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='300016'/>
+		</effects>
+	</tech>
+	<!-- for hungarians -->
+	<tech mergeMode='replace' name='DEREVMagyarGrenadier' type='Normal'>
+		<dbid>6473</dbid>
+		<status>UNOBTAINABLE</status>
+		<flag>Shadow</flag>
+		<effects>
+			<effect type='TechStatus' status='active'>HeavyGrenadierEnable</effect>
+			<effect type='Data' amount='6.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' action='BuildingAttack' amount='6.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' action='CoverBuildingAttack' amount='6.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' action='RangedAttack' amount='6.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' action='CoverRangedAttack' amount='6.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' action='ChargeAbilityGrenade' amount='6.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='2.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>Grenadier</target>
+			</effect>
+			<effect type='Data' action='BuildingAttack' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>Grenadier</target>
+			</effect>
+			<effect type='Data' action='VolleyRangedAttack' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>Grenadier</target>
+			</effect>
+			<effect type='Data' action='DefendRangedAttack' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>Grenadier</target>
+			</effect>
+			<effect type='Data' action='StaggerRangedAttack' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>Grenadier</target>
+			</effect>
+			<effect type='Data' action='MortarAttack' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>Grenadier</target>
+			</effect>
+			<effect type='Data' action='MortarBuildingAttack' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>Grenadier</target>
+			</effect>
+			<effect type='Data' amount='1.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>AbusGun</target>
+			</effect>
+			<effect type='Data' action='VolleyRangedAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>AbusGun</target>
+			</effect>
+			<effect type='Data' action='DefendRangedAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>AbusGun</target>
+			</effect>
+			<effect type='Data' action='StaggerRangedAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>AbusGun</target>
+			</effect>
+			<effect type='Data' amount='1.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>deLeatherCannon</target>
+			</effect>
+			<effect type='Data' action='CannonAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>deLeatherCannon</target>
+			</effect>
+			<effect type='Data' action='BombardAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>deLeatherCannon</target>
+			</effect>
+			<effect type='Data' action='CaseShotAttack' amount='0.50' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>deLeatherCannon</target>
+			</effect>
+			<effect type='SetName' proto='HeavyGrenadier' culture='none' newname='300020'/>
+			<effect type='SetName' proto='Grenadier' culture='none' newname='80903'/>
+		</effects>
+	</tech>
+
+	<!-- Hand Mortar Without Greandiers  -->
+	<tech name='DEHCHandMortarGrenadeless' type='Normal'>
+		<dbid>9007</dbid>
+		<displaynameid>91787</displaynameid>
+		<cost resourcetype='Ships'>1.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\grenade_launcher.png</icon>
+		<rollovertextid>300019</rollovertextid>
+		<flag>HomeCity</flag>
+		<effects>
+			<effect type='Data' amount='1.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>AbusGun</target>
+			</effect>
+			<effect type='Data' action='VolleyRangedAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>AbusGun</target>
+			</effect>
+			<effect type='Data' action='DefendRangedAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>AbusGun</target>
+			</effect>
+			<effect type='Data' action='StaggerRangedAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>AbusGun</target>
+			</effect>
+			<effect type='Data' amount='1.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>deLeatherCannon</target>
+			</effect>
+			<effect type='Data' action='CannonAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>deLeatherCannon</target>
+			</effect>
+			<effect type='Data' action='BombardAttack' amount='1.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>deLeatherCannon</target>
+			</effect>
+			<effect type='Data' action='CaseShotAttack' amount='0.50' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>deLeatherCannon</target>
+			</effect>
+			<effect type='Data' amount='2.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' action='ChargeAbilityGrenade' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='RangedAttack' amount='1.00' subtype='ActionEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='CoverRangedAttack' amount='1.00' subtype='ActionEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.00' tactic='VolleyPirate' subtype='TacticEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.00' tactic='StaggerPirate' subtype='TacticEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect type='Data' amount='1.00' subtype='CopyTacticAnims' fromtactic='DefendRanged' totactic='Defend' relativity='Assign'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='TechStatus' status='obtainable'>Bayonet</effect>
+		</effects>
+	</tech>
+
+	<!-- Edit techs -->
+	<tech name='DEGrenadierEnable'>
+		<effects>
+			<effect mergeMode='remove' type='Data' amount='-1.00' subtype='AllowedAge' relativity='Absolute'>
+				<target type='ProtoUnit'>ArtilleryDepot</target>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='DEHCHandMortar'>
+		<effects>
+			<effect mergeMode='add' type='Data' amount='2.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='ChargeAbilityGrenade' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='RangedAttack' amount='1.00' subtype='ActionEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='CoverRangedAttack' amount='1.00' subtype='ActionEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.00' tactic='VolleyPirate' subtype='TacticEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.00' tactic='StaggerPirate' subtype='TacticEnable' relativity='Absolute'>
+				<target mergeMode='add' type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.00' subtype='CopyTacticAnims' fromtactic='DefendRanged' totactic='Defend' relativity='Assign'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='TechStatus' status='obtainable'>Bayonet</effect>
+		</effects>
+	</tech>
+	<tech name='DEHCHandMortarGerman'>
+		<effects>
+			<effect mergeMode='add' type='Data' amount='2.00' subtype='LOS' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='ChargeAbilityGrenade' amount='2.00' subtype='MaximumRange' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='RangedAttack' amount='1.00' subtype='ActionEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='CoverRangedAttack' amount='1.00' subtype='ActionEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.00' tactic='VolleyPirate' subtype='TacticEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.00' tactic='StaggerPirate' subtype='TacticEnable' relativity='Absolute'>
+				<target mergeMode='add' type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.00' subtype='CopyTacticAnims' fromtactic='DefendRanged' totactic='Defend' relativity='Assign'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='IncendiaryGrenades'>
+		<Effects>
+			<effect mergeMode='add' type='Data' action='ChargeAbilityGrenade' amount='1.00' subtype='ActionEnable' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' action='RangedAttack' amount='-1.00' subtype='DamageArea' relativity='Absolute'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='0.00' subtype='UpdateVisual' unittype='HeavyGrenadier' relativity='Absolute'>
+				<target type='Player'>
+				</target>
+			</effect>
+		</Effects>
+	</tech>
+	<tech name='ChurchWesternization'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>VeteranHeavyGrenadiers</effect>
+		</effects>
+	</tech>
+	<tech name='ChurchPetrineReforms'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>RGRyndaGrenadiers</effect>
+		</effects>
+	</tech>
+
+	<!-- Shipments -->
+	<tech name='HCShipHeavyGrenadiers1' type='Normal'>
+		<dbid>9008</dbid>
+		<displaynameid>300021</displaynameid>
+		<cost resourcetype='Ships'>1.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\art\units\spc\boneguard\boneguard_age2_icon_64x64.png</icon>
+		<flag>HomeCity</flag>
+		<effects>
+			<effect type='Data' amount='4.00' subtype='FreeHomeCityUnit' unittype='HeavyGrenadier' relativity='Absolute'>
+				<target type='Player'/>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='HCShipHeavyGrenadiers2' type='Normal'>
+		<dbid>9009</dbid>
+		<displaynameid>300022</displaynameid>
+		<cost resourcetype='Ships'>1.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\art\units\spc\boneguard\boneguard_age2_icon_64x64.png</icon>
+		<flag>HomeCity</flag>
+		<effects>
+			<effect type='Data' amount='7.00' subtype='FreeHomeCityUnit' unittype='HeavyGrenadier' relativity='Absolute'>
+				<target type='Player'/>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='HCShipHeavyGrenadiers3' type='Normal'>
+		<dbid>9010</dbid>
+		<displaynameid>300023</displaynameid>
+		<cost resourcetype='Ships'>1.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\art\units\spc\boneguard\boneguard_age2_icon_64x64.png</icon>
+		<flag>HomeCity</flag>
+		<effects>
+			<effect type='Data' amount='5.00' subtype='FreeHomeCityUnit' unittype='HeavyGrenadier' relativity='Absolute'>
+				<target type='Player'/>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='HCShipHeavyGrenadiers4' type='Normal'>
+		<dbid>9011</dbid>
+		<displaynameid>300024</displaynameid>
+		<cost resourcetype='Ships'>1.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\art\units\spc\boneguard\boneguard_age2_icon_64x64.png</icon>
+		<flag>HomeCity</flag>
+		<effects>
+			<effect type='Data' amount='9.00' subtype='FreeHomeCityUnit' unittype='HeavyGrenadier' relativity='Absolute'>
+				<target type='Player'/>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='HCShipHeavyGrenadiers5' type='Normal'>
+		<dbid>9012</dbid>
+		<displaynameid>300025</displaynameid>
+		<cost resourcetype='Ships'>1.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\art\units\spc\boneguard\boneguard_age2_icon_64x64.png</icon>
+		<flag>HomeCity</flag>
+		<effects>
+			<effect type='Data' amount='3.00' subtype='FreeHomeCityUnit' unittype='HeavyGrenadier' relativity='Absolute'>
+				<target type='Player'/>
+			</effect>
+			<effect type='Data' amount='1.00' subtype='FreeHomeCityUnit' unittype='deCrateofFood50' relativity='Absolute'>
+				<target type='Player'/>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='HCXPShipHeavyGrenadiersRepeat' type='Normal'>
+		<dbid>9013</dbid>
+		<displaynameid>300026</displaynameid>
+		<cost resourcetype='Ships'>1.0000</cost>
+		<researchpoints>40.0000</researchpoints>
+		<status>UNOBTAINABLE</status>
+		<icon>resources\images\icons\techs\infinite_boneguard_age2.png</icon>
+		<flag>HomeCity</flag>
+		<effects>
+			<effect type='Data' amount='6.00' subtype='FreeHomeCityUnit' unittype='HeavyGrenadier' relativity='Absolute'>
+				<target type='Player'/>
+			</effect>
+		</effects>
+	</tech>
+
+	<!-- Edit civs -->
+	<!-- british -->
+	<Tech name='Age0British'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>HeavyGrenadierEnable</effect>
+		</effects>
+	</Tech>
+	<Tech name='PostIndustrialBritish'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>VeteranHeavyGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='active'>GuardHeavyGrenadiers</effect>
+		</effects>
+	</Tech>
+	<Tech name='PostImperialBritish'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>ImperialHeavyGrenadiers</effect>
+		</effects>
+	</Tech>
+	<!-- dutch -->
+	<Tech name='Age0Dutch'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>HeavyGrenadierEnable</effect>
+		</effects>
+	</Tech>
+	<Tech name='PostIndustrialDutch'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>VeteranHeavyGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='active'>GuardHeavyGrenadiers</effect>
+		</effects>
+	</Tech>
+	<Tech name='PostImperialDutch'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>ImperialHeavyGrenadiers</effect>
+		</effects>
+	</Tech>
+	<!-- ottoman -->
+	<Tech name='Age0Ottoman'>
+		<effects>
+			<effect mergeMode='remove' type='TechStatus' status='active'>DEGrenadierEnable</effect>
+			<effect mergeMode='add' type='TechStatus' status='active'>HeavyGrenadierEnable</effect>
+			<effect mergeMode='add' type='TechStatus' status='unobtainable'>GuardHeavyGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='unobtainable'>ImperialHeavyGrenadiers</effect>
+		</effects>
+	</Tech>
+	<Tech name='PostIndustrialOttoman'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>VeteranHeavyGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='active'>RGBaratcuCorps</effect>
+		</effects>
+	</Tech>
+	<Tech name='PostImperialOttoman'>
+		<effects>
+			<effect type='TechStatus' status='active'>ImperialBaratcu</effect>
+		</effects>
+	</Tech>
+	<!-- russian -->
+	<Tech name='Age0Russian'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>HeavyGrenadierEnable</effect>
+			<effect mergeMode='add' type='TechStatus' status='unobtainable'>GuardHeavyGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='unobtainable'>ImperialHeavyGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='obtainable'>RGRyndaGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='obtainable'>ImperialRyndas</effect>
+		</effects>
+	</Tech>
+	<Tech name='PostIndustrialRussian'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>VeteranHeavyGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='active'>RGRyndaGrenadiers</effect>
+		</effects>
+	</Tech>
+	<Tech name='PostImperialRussian'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>ImperialRyndas</effect>
+		</effects>
+	</Tech>
+	<!-- swedish -->
+	<Tech name='DEAge0Swedish'>
+		<effects>
+			<effect mergeMode='remove' type='TechStatus' status='active'>DEGrenadierEnable</effect>
+			<effect mergeMode='add' type='TechStatus' status='active'>HeavyGrenadierEnable</effect>
+		</effects>
+	</Tech>
+	<Tech name='DEPostIndustrialSwedish'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>VeteranHeavyGrenadiers</effect>
+			<effect mergeMode='add' type='TechStatus' status='active'>GuardHeavyGrenadiers</effect>
+		</effects>
+	</Tech>
+	<Tech name='DEPostImperialSwedish'>
+		<effects>
+			<effect mergeMode='add' type='TechStatus' status='active'>ImperialHeavyGrenadiers</effect>
+		</effects>
+	</Tech>
+</techtreemods>

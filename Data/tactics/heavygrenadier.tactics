@@ -1,0 +1,276 @@
+<tactics>
+	<!-- Actions -->
+	<action>
+		<name stringid='38127'>RangedAttack</name>
+		<type>Attack</type>
+		<active>0</active>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack</anim>
+		<reloadanim>Volley_standing_reload</reloadanim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<minrange>2</minrange>
+		<rate type='Unit'>1.0</rate>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid='38128'>CoverRangedAttack</name>
+		<type>Attack</type>
+		<active>0</active>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<anim>Volley_standing_attack</anim>
+		<reloadanim>Volley_standing_reload</reloadanim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<maxheight>0</maxheight>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>1.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>12</trackrating>
+		<unintentionaldamagemultiplier>0.7</unintentionaldamagemultiplier>
+		<projectile>InvisibleProjectile</projectile>
+		<impacteffect>effects\impacts\gun</impacteffect>
+		<minrange>2</minrange>
+		<rate type='Unit'>1.0</rate>
+		<instantballistics>1</instantballistics>
+	</action>
+	<action>
+		<name stringid='38135'>HandAttack</name>
+		<type>Attack</type>
+		<maxrange>2.0</maxrange>
+		<rate type='Unit'>1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Charge_attack</anim>
+		<idleanim>Charge_idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid='38134'>CoverHandAttack</name>
+		<type>Attack</type>
+		<maxrange>2.0</maxrange>
+		<rate type='Unit'>1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Charge_attack</anim>
+		<idleanim>Cover_Idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+	</action>
+	<action>
+		<name stringid='38176'>BayonetAttack</name>
+		<type>Attack</type>
+		<maxrange>2.0</maxrange>
+		<rate type='AbstractCavalry'>1.0</rate>
+		<attackaction>1</attackaction>
+		<active>0</active>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>bayonet_attack</anim>
+		<idleanim>Volley_standing_idle</idleanim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+		<hidefromstats>1</hidefromstats>
+	</action>
+	<action>
+		<name stringid='42873'>GuardianAttack</name>
+		<type>Attack</type>
+		<maxrange>2.0</maxrange>
+		<rate type='Guardian'>1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<speedboost>1</speedboost>
+		<anim>Charge_attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+		<hidefromstats>1</hidefromstats>
+	</action>
+	<action>
+		<name stringid='42873'>GuardianCoverAttack</name>
+		<type>Attack</type>
+		<maxrange>2.0</maxrange>
+		<rate type='Guardian'>1.0</rate>
+		<attackaction>1</attackaction>
+		<handlogic>1</handlogic>
+		<anim>Charge_attack</anim>
+		<impacteffect>effects\impacts\melee</impacteffect>
+		<targetspeedboost>1</targetspeedboost>
+		<basedamagecap>1</basedamagecap>
+		<hidefromstats>1</hidefromstats>
+	</action>
+	<action>
+		<name stringid='38118'>BuildingAttack</name>
+		<type>Attack</type>
+		<rangedlogic>1</rangedlogic>
+		<maxrange>6</maxrange>
+		<rate type='LogicalTypeShipsAndBuildings'>1.0 </rate>
+		<attackaction>1</attackaction>
+		<speedboost>1</speedboost>
+		<anim>Raze_Attack</anim>
+		<idleanim>Raze_Idle</idleanim>
+		<projectile>Grenade</projectile>
+		<impacteffect>effects\impacts\grenade</impacteffect>
+	</action>
+	<action>
+		<name stringid='38118'>CoverBuildingAttack</name>
+		<type>Attack</type>
+		<rangedlogic>1</rangedlogic>
+		<maxrange>6</maxrange>
+		<rate type='LogicalTypeShipsAndBuildings'>1.0</rate>
+		<attackaction>1</attackaction>
+		<speedboost>1</speedboost>
+		<anim>Raze_attack</anim>
+		<idleanim>Raze_idle</idleanim>
+		<projectile>Grenade</projectile>
+		<impacteffect>effects\impacts\grenade</impacteffect>
+	</action>
+	<action>
+		<name stringid='300017'>ChargeAbilityGrenade</name>
+		<type>Attack</type>
+		<active>0</active>
+		<attackaction>1</attackaction>
+		<rangedlogic>1</rangedlogic>
+		<chargeaction>1</chargeaction>
+		<anim>Grenade_Attack</anim>
+		<accuracy>1.0</accuracy>
+		<accuracyreductionfactor>0.5</accuracyreductionfactor>
+		<aimbonus>0</aimbonus>
+		<maxspread>5</maxspread>
+		<spreadfactor>0.25</spreadfactor>
+		<trackrating>120</trackrating>
+		<unintentionaldamagemultiplier>1.0</unintentionaldamagemultiplier>
+		<projectile>Grenade</projectile>
+		<impacteffect>effects\impacts\grenade</impacteffect>
+		<minrange>2</minrange>
+		<rate type='Unit'>1.0 </rate>
+		<throw>1</throw>
+		<impactforcemin>450.0</impactforcemin>
+		<impactforcemax>600.0</impactforcemax>
+		<impactlaunchangle>50.0</impactlaunchangle>
+		<areasortmode>Radial</areasortmode>
+		<targetground>1</targetground>
+		<basedamagecap>1</basedamagecap>
+		<perfectaccuracy>1</perfectaccuracy>
+	</action>
+	<!-- Tactics -->
+	<tactic>Melee
+		<action priority='100'>ChargeAbilityGrenade</action>
+		<action priority='90'>BuildingAttack</action>
+		<action priority='80'>GuardianAttack</action>
+		<action priority='75'>HandAttack</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Charge_idle</idleanim>
+		<boredanim>Charge_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Charge_walk</walkanim>
+		<joganim>Charge_jog</joganim>
+		<runanim>Charge_run</runanim>
+		<speedmodifier>1.0625</speedmodifier>
+	</tactic>
+	<tactic>Defend
+		<action priority='100'>ChargeAbilityGrenade</action>
+		<action priority='90'>RangedAttack</action>
+		<action priority='80'>GuardianAttack</action>
+		<action priority='75'>BuildingAttack</action>
+		<action priority='50'>HandAttack</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Defend_idle</idleanim>
+		<boredanim>Defend_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Cover_walk</walkanim>
+		<joganim>Cover_jog</joganim>
+		<runanim>Cover_run</runanim>
+	</tactic>
+	<tactic>Cover
+		<action priority='100'>ChargeAbilityGrenade</action>
+		<action priority='95'>CoverBuildingAttack</action>
+		<action priority='90'>CoverRangedAttack</action>
+		<action priority='80'>GuardianCoverAttack</action>
+		<action priority='75'>CoverHandAttack</action>
+		<attacktype>LogicalTypeHandUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeHandUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeHandUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Cover_Idle</idleanim>
+		<boredanim>Cover_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Cover_walk</walkanim>
+		<joganim>Cover_jog</joganim>
+		<runanim>Cover_run</runanim>
+		<speedmodifier>0.5</speedmodifier>
+	</tactic>
+	<tactic>VolleyPirate
+		<action priority='100'>ChargeAbilityGrenade</action>
+		<action priority='90'>RangedAttack</action>
+		<action priority='75'>BuildingAttack</action>
+		<action priority='60'>GuardianAttack</action>
+		<action priority='55'>BayonetAttack</action>
+		<action priority='50'>HandAttack</action>
+		<active>0</active>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>1</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Volley_standing_idle</idleanim>
+		<boredanim>Volley_standing_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Volley_walk</walkanim>
+		<joganim>Volley_jog</joganim>
+		<runanim>Volley_run</runanim>
+	</tactic>
+	<tactic>StaggerPirate
+		<action priority='100'>ChargeAbilityGrenade</action>
+		<action priority='90'>RangedAttack</action>
+		<action priority='75'>BuildingAttack</action>
+		<action priority='60'>GuardianAttack</action>
+		<action priority='55'>BayonetAttack</action>
+		<action priority='50'>HandAttack</action>
+		<active>0</active>
+		<attacktype>LogicalTypeRangedUnitsAttack</attacktype>
+		<autoattacktype>LogicalTypeRangedUnitsAutoAttack</autoattacktype>
+		<attackresponsetype>LogicalTypeRangedUnitsAttack</attackresponsetype>
+		<runaway>0</runaway>
+		<autoretarget>1</autoretarget>
+		<idleanim>Cover_ranged_idle</idleanim>
+		<boredanim>Cover_ranged_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Cover_ranged_walk</walkanim>
+		<joganim>Cover_ranged_jog</joganim>
+		<runanim>Cover_ranged_run</runanim>
+	</tactic>
+	<tactic>DefendRanged
+		<active>0</active>
+		<idleanim>Defend_ranged_idle</idleanim>
+		<boredanim>Defend_ranged_bored</boredanim>
+		<deathanim>Death_by_melee</deathanim>
+		<walkanim>Cover_ranged_walk</walkanim>
+		<joganim>Cover_ranged_jog</joganim>
+		<runanim>Cover_ranged_run</runanim>
+	</tactic>
+</tactics>

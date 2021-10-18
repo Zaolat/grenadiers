@@ -1,0 +1,9 @@
+<abilitymods>
+	<heavygrenadier>
+		<ability>ChargeAbilityGrenade
+			<tech>IncendiaryGrenades</tech>
+			<bindtochargeaction>true</bindtochargeaction>
+			<forceshowrollover>true</forceshowrollover>
+		</ability>
+	</heavygrenadier>
+</abilitymods>

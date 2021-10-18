@@ -1,0 +1,43 @@
+<stringmods>
+	<StringTable>
+		<Language name='English'>
+			<!-- Alters grenadiers text -->
+			<string _locid='22957'>Light artillery that throws grenades to defeat infantry.</string>
+			<string _locid='46983'>Grenadiers have an increased burst radius and do more damage to buildings. Heavy Grenadiers throw grenades as a charged ability.</string>
+			<string _locid='91786'>Equips Heavy Grenadiers with a musket, and enables Grenadiers with a hand mortar to be trained, which launches explosives at a longer range.</string>
+
+			<!-- Heavy Grenadier text -->
+			<string _locid='300000'>Heavy Grenadier</string>
+			<string _locid='300001'>AR Heavy Grenadier</string>
+			<string _locid='300002'>Siege heavy infantry. Good against cavalry and buildings.</string>
+			<string _locid='300003'>Siege heavy infantry</string>
+
+			<string _locid='300004'>Grenadier attack and hitpoints increased.</string>
+			<string _locid='300005'>Veteran Heavy Grenadiers</string>
+			<string _locid='300006'>Veteran Heavy Grenadier</string>
+			<string _locid='300007'>Guard Heavy Grenadiers</string>
+			<string _locid='300008'>Guard Heavy Grenadier</string>
+			<string _locid='300009'>Imperial Heavy Grenadiers</string>
+			<string _locid='300010'>Imperial upgrade for Heavy Grenadiers.</string>
+			<string _locid='300011'>Imperial Heavy Grenadier</string>
+			<string _locid='300012'>Rynda Heavy Grenadiers</string>
+			<string _locid='300013'>Russian Heavy Grenadier attack and hitpoints greatly increased.</string>
+			<string _locid='300014'>Rynda Heavy Grenadier</string>
+			<string _locid='300015'>Imperial Ryndas</string>
+			<string _locid='300016'>Imperial Rynda</string>
+
+			<string _locid='300017'>Grenade Attack (Charged)</string>
+			<string _locid='300018'>Charged Ability: A thrown grenade dealing area damage.</string>
+
+			<string _locid='300019'>Light artillery range increased and equips Heavy Grenadiers with a musket.</string>
+			<string _locid='300020'>Hungarian Heavy Grenadier</string>
+
+			<string _locid='300021'>4 Heavy Grenadiers</string>
+			<string _locid='300022'>7 Heavy Grenadiers</string>
+			<string _locid='300023'>5 Heavy Grenadiers</string>
+			<string _locid='300024'>9 Heavy Grenadiers</string>
+			<string _locid='300025'>3 Heavy Grenadiers and 50 food</string>
+			<string _locid='300026'>6 Heavy Grenadiers</string>
+		</Language>
+	</StringTable>
+</stringmods>

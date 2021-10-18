@@ -1,0 +1,8 @@
+<powermods>
+  <power name='ChargeAbilityGrenade' type='GeneralEffect'>
+    <displaynameid>23515</displaynameid>
+    <rolloverid>300018</rolloverid>
+    <icon>resources\images\icons\abilities\grenade_ability.png</icon>
+    <allowduringnorush>1</allowduringnorush>
+  </power>
+</powermods>
