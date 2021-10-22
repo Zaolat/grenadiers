@@ -125,7 +125,7 @@
 	<attachment>hat2
 		<component>hat
 			<assetreference type='GrannyModel'>
-				<file>units\mercenaries\cannoneer\cannoneer_hat</file>
+				<file>units\infantry\pikeman\pikeman_3age_hat</file>
 			</assetreference>
 		</component>
 		<anim>Idle
