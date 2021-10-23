@@ -30,7 +30,7 @@
 		<cost resourcetype='Gold'>120.0000</cost>
 		<cost resourcetype='Food'>80.0000</cost>
 		<allowedage>1</allowedage>
-		<armor type='Ranged' value='0.4000'/>
+		<armor type='Ranged' value='0.5000'/>
 		<unittype>LogicalTypeHealed</unittype>
 		<unittype>LogicalTypeValidSharpshoot</unittype>
 		<unittype>LogicalTypeNeededForVictory</unittype>
@@ -71,7 +71,7 @@
 		<tactics>grenadier.tactics</tactics>
 		<protoaction>
 			<name>BuildingAttack</name>
-			<damage>26.000000</damage>
+			<damage>24.000000</damage>
 			<damagetype>Siege</damagetype>
 			<maxrange>12.000000</maxrange>
 			<rof>3.000000</rof>
@@ -86,11 +86,11 @@
 			<damagebonus type='AbstractVillager'>0.500000</damagebonus>
 			<damagebonus type='AbstractHeavyInfantry'>2.000000</damagebonus>
 			<damagebonus type='AbstractLightCavalry'>2.000000</damagebonus>
-			<damagebonus type='xpEagleKnight'>1.000000</damagebonus>
+			<damagebonus type='xpEagleKnight'>2.000000</damagebonus>
 		</protoaction>
 		<protoaction>
 			<name>DefendRangedAttack</name>
-			<damage>18.000000</damage>
+			<damage>16.000000</damage>
 			<damagetype>Siege</damagetype>
 			<maxrange>16.000000</maxrange>
 			<minrange>3.000000</minrange>
@@ -103,11 +103,11 @@
 			<damagebonus type='AbstractVillager'>0.500000</damagebonus>
 			<damagebonus type='AbstractHeavyInfantry'>2.000000</damagebonus>
 			<damagebonus type='AbstractLightCavalry'>2.000000</damagebonus>
-			<damagebonus type='xpEagleKnight'>1.000000</damagebonus>
+			<damagebonus type='xpEagleKnight'>2.000000</damagebonus>
 		</protoaction>
 		<protoaction>
 			<name>StaggerRangedAttack</name>
-			<damage>18.000000</damage>
+			<damage>16.000000</damage>
 			<damagetype>Siege</damagetype>
 			<maxrange>16.000000</maxrange>
 			<minrange>3.000000</minrange>
@@ -120,11 +120,11 @@
 			<damagebonus type='AbstractVillager'>0.500000</damagebonus>
 			<damagebonus type='AbstractHeavyInfantry'>2.000000</damagebonus>
 			<damagebonus type='AbstractLightCavalry'>2.000000</damagebonus>
-			<damagebonus type='xpEagleKnight'>1.000000</damagebonus>
+			<damagebonus type='xpEagleKnight'>2.000000</damagebonus>
 		</protoaction>
 		<protoaction>
 			<name>VolleyRangedAttack</name>
-			<damage>18.000000</damage>
+			<damage>16.000000</damage>
 			<damagetype>Siege</damagetype>
 			<maxrange>16.000000</maxrange>
 			<rof>3.000000</rof>
@@ -136,11 +136,11 @@
 			<damagebonus type='AbstractVillager'>0.500000</damagebonus>
 			<damagebonus type='AbstractHeavyInfantry'>2.000000</damagebonus>
 			<damagebonus type='AbstractLightCavalry'>2.000000</damagebonus>
-			<damagebonus type='xpEagleKnight'>1.000000</damagebonus>
+			<damagebonus type='xpEagleKnight'>2.000000</damagebonus>
 		</protoaction>
 		<protoaction>
 			<name>MortarAttack</name>
-			<damage>18.000000</damage>
+			<damage>16.000000</damage>
 			<damagetype>Siege</damagetype>
 			<maxrange>18.000000</maxrange>
 			<minrange>3.000000</minrange>
@@ -154,11 +154,11 @@
 			<damagebonus type='AbstractVillager'>0.500000</damagebonus>
 			<damagebonus type='AbstractHeavyInfantry'>2.000000</damagebonus>
 			<damagebonus type='AbstractLightCavalry'>2.000000</damagebonus>
-			<damagebonus type='xpEagleKnight'>1.000000</damagebonus>
+			<damagebonus type='xpEagleKnight'>2.000000</damagebonus>
 		</protoaction>
 		<protoaction>
 			<name>MortarBuildingAttack</name>
-			<damage>26.000000</damage>
+			<damage>24.000000</damage>
 			<damagetype>Siege</damagetype>
 			<maxrange>14.000000</maxrange>
 			<rof>3.000000</rof>
