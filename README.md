@@ -38,4 +38,10 @@ This mod split the unit in 2: one that’s a heavy infantry and another that’s
 
 > ² requires incendiary grenades
 
+Russians and Ottomans have royal guard upgrades for the heavy grenadier.
+
+The grenade launcher card enables the grenadier for all civilizations except the ottomans and swedes, as they already have a light artillery that fulfills the role of the skirmisher (the *abus gun* and the *leather cannon*); for these civilizations, the card instead increase the range of these units by 1.
+
+The hungarian grenadiers card (in the hungarian revolution) increases the range of the grenadiers by 2 and heavy grenadiers by 6.
+
 I'm publishing this mod for public test, to adjust the balance of both units.
