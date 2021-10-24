@@ -37,3 +37,5 @@ This mod split the unit in 2: one that’s a heavy infantry and another that’s
 > ¹ requires grenade launchers
 
 > ² requires incendiary grenades
+
+I'm publishing this mod for public test, to adjust the balance of both units.
