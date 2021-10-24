@@ -441,6 +441,30 @@
 			<effect mergeMode='add' type='TechStatus' status='active'>RGRyndaGrenadiers</effect>
 		</effects>
 	</tech>
+	<tech name='HCMortarsDamageDutchTeam'>
+		<effects>
+			<effect mergeMode='add' type='Data' action='ChargeAbilityGrenade' amount='1.20' subtype='Damage' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='HCMusketeerGrenadierDamageBritish'>
+		<effects>
+			<effect mergeMode='add' type='Data' amount='1.15' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+		</effects>
+	</tech>
+	<tech name='HCMusketeerGrenadierCombatBritish'>
+		<effects>
+			<effect mergeMode='add' type='Data' amount='1.15' subtype='Damage' allactions='1' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+			<effect mergeMode='add' type='Data' amount='1.15' subtype='Hitpoints' relativity='BasePercent'>
+				<target type='ProtoUnit'>HeavyGrenadier</target>
+			</effect>
+		</effects>
+	</tech>
 
 	<!-- Shipments -->
 	<tech name='HCShipHeavyGrenadiers1' type='Normal'>

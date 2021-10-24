@@ -140,7 +140,7 @@
 		</protoaction>
 		<protoaction>
 			<name>MortarAttack</name>
-			<damage>16.000000</damage>
+			<damage>18.000000</damage>
 			<damagetype>Siege</damagetype>
 			<maxrange>18.000000</maxrange>
 			<minrange>3.000000</minrange>
