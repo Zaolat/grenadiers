@@ -35,4 +35,5 @@ This mod split the unit in 2: one that’s a heavy infantry and another that’s
 | Grenade ability² | 20 dmg, 10 range, 4 radius, 30 sec. cooldown |
 
 > ¹ requires grenade launchers
+
 > ² requires incendiary grenades
